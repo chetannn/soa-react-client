@@ -5,9 +5,6 @@ import {
 } from '@material-ui/core';
 import Navbar from './components/Navbar';
 import AppRouter from './components/Router';
-import dotenv from 'dotenv';
-
-dotenv.config();
 
 function App(props) {
   return (
