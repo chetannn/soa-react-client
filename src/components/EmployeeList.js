@@ -29,7 +29,6 @@ const EmployeeList = () => {
 
   const renderEmployees = () => {
     if (employees) {
-      {
         return employees.map((employee, index) => (
           <Card style={{ margin: '1rem', maxWidth: 345 }} key={employee.id}>
             <CardActionArea>
@@ -45,7 +44,6 @@ const EmployeeList = () => {
             </CardActionArea>
           </Card>
         ));
-      }
     } else {
       return <h1>{message}</h1>;
     }
