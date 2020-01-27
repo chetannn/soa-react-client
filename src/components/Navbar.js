@@ -3,17 +3,9 @@ import {
   AppBar,
   Toolbar,
   Button,
-  Container,
-  Card,
-  CardActions,
-  CardContent,
   Typography,
-  TextField,
-  CardHeader
 } from '@material-ui/core';
-import { Alert, AlertTitle } from '@material-ui/lab';
-import { Link, BrowserRouter as Router, Route } from 'react-router-dom';
-import AppRouter from './Router';
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
   return (
@@ -27,6 +19,9 @@ const Navbar = () => {
         </Button>
         <Button component={Link} to="/employees" color="inherit">
           Employees
+        </Button>
+        <Button component={Link} to="/user-detail" color="inherit">
+          User Detail
         </Button>
       </Toolbar>
     </AppBar>

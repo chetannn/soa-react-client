@@ -1,18 +1,14 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import axios from 'axios';
 import {
-  AppBar,
-  Toolbar,
   Button,
-  Container,
   Card,
   CardActions,
   CardContent,
-  Typography,
   TextField,
   CardHeader
 } from '@material-ui/core';
-import { Alert, AlertTitle } from '@material-ui/lab';
+import { Alert } from '@material-ui/lab';
 import { Link, BrowserRouter as Router } from 'react-router-dom';
 import { AUTH_SERVER_URL } from '../config';
 
@@ -22,8 +18,6 @@ const Login = (props) => {
   let [loginState, setLoginState] = useState(false);
 
   const submitForm = () => {
-    console.log(AUTH_SERVER_URL);
-    return;
     let user = {
       client_id: 1,
       username,
